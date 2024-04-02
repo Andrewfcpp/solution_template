@@ -160,7 +160,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="main_favtools.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="src\log_manager.cpp" />
   </ItemGroup>
   <ItemGroup>

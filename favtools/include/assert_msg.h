@@ -1,6 +1,3 @@
-//    Author: Andrejs Fjodorovs (Andrew)
-//    Mail:   andfjod@yahoo.com
-//    Date:   2024, March, 31
 
 #ifdef _MSC_VER
 #pragma once

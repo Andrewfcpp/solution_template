@@ -1,6 +1,3 @@
-//    Author: Andrejs Fjodorovs (Andrew)
-//    Mail:   andfjod@yahoo.com
-//    Date:   2024, April, 1
 
 #ifndef NDEBUG
 //Enable tests
