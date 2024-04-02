@@ -55,15 +55,4 @@ void __assert_expr_msg(const char* expr_str, bool expr, const char* file, int li
     }
 }
 
-//Platform dependent break function example
-//#ifdef WINDOWS
-//#define BREAK_FN __debugbreak();
-//#elifdef MAC
-//#define BREAK_FN __builtin_debugtrap();
-//#elifdef LINUX
-//#define BREAK_FN __builtin_trap();
-//#else
-//#error "Error: Unknown platform."
-//#endif
-
 #endif

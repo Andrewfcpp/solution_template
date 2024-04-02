@@ -16,7 +16,7 @@
 
 
 
-#define DEFAULT_LOGGER_NAME "SpdLogger"
+#define DEFAULT_LOGGER_NAME "spdlogger"
 
 #ifndef NDEBUG //Debug mode, enable logging
 
