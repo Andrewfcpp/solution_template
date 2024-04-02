@@ -1,5 +1,5 @@
 
-#ifndef NDEBUG
+#ifndef NDEBUG //Debug mode
 //Enable tests
 #define DOCTEST_CONFIG_IMPLEMENT
 #define DOCTEST_RUN doctest_run();
@@ -14,8 +14,10 @@
 
 
 
-//Do not remove! Use DOCTEST_RUN; in main() to run all tests.
-#ifndef NDEBUG
+//Do not remove! 
+//Doctest init and config function.
+//Use DOCTEST_RUN; in main() to run all tests.
+#ifndef NDEBUG //Debug mode
 void doctest_run()
 {
     doctest::Context context;

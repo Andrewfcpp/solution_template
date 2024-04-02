@@ -9,7 +9,7 @@
 #else
 //Disable tests and remove from binary
 #define DOCTEST_CONFIG_DISABLE
-#pragma message("Warning: Release mode disable tests! Change to Debug mode.")
+#pragma message("Warning: All tests disabled in Release mode! Change to Debug mode.")
 #define DOCTEST_RUN /*NOTHING*/
 #endif
 
