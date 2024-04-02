@@ -64,7 +64,8 @@ void doctest_run()
 #include <fmt/chrono.h>
 #include <fmt/color.h>
 
-//assertions
+//Assertions
+//Check assert_msg.h for info.
 #include "include/assert_msg.h"
 
 
@@ -96,12 +97,16 @@ TEST_CASE("Testing the factorial function")
 
 void test_logger()
 {
-    //Init at begin
+    //Include first:
+    // #include "log_macros.h"
+    // #include "log_manager.h"
+    
+    //Init at begin.
     LogManager log_manager;
     log_manager.init();
 
-    //Using SpdLog, examples.
-    LOG_TRACE("Hello from favtools! ver.{}.{}.{}", 0, 0, 1);
+    //Use spdlog.
+    LOG_INFO("Hello from main! ver.{}.{}.{}", 0, 0, 1);
     LOG_TRACE("LOG_TRACE");
     LOG_DEBUG("LOG_DEBUG");
     LOG_INFO("LOG_INFO");
@@ -109,7 +114,7 @@ void test_logger()
     LOG_ERROR("LOG_ERROR");
     LOG_FATAL("LOG_FATAL");
 
-    //Shutdown at end
+    //Shutdown at end.
     log_manager.shutdown();
 }
 
@@ -117,14 +122,17 @@ void test_fmt()
 {
     fmt::print("Hello from fmt! {}\n", 12345);
 
+    //Array, vector example.
     std::array<int, 3> v{ 1,2,3 };
     //std::vector<int> v = { 1, 2, 3 };
     fmt::print("{}\n", v);
     
+    //Date time example.
     auto now = std::chrono::system_clock::now();
     fmt::print("Date and time: {}\n", now);
     fmt::print("Time: {:%H:%M}\n", now);
 
+    //String and swap params example.
     std::string s = fmt::format("I'd rather be {1} than {0}.\n", "right", "happy");
     // s == "I'd rather be happy than right."
     fmt::print(s);
