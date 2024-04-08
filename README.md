@@ -1,4 +1,4 @@
-C++17 Solution template for Visual studio 2019.
+C++17 Solution template.
 Included: benchmark, doctest, fmt, spdlog, assert macros
 
 benchmark: https://github.com/google/benchmark
